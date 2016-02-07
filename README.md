@@ -5,4 +5,4 @@ We've all been there: your new REST project's going really well, you do everythi
 
 This is a little project for scanning your springtastrophe and building that swagger content file thingy you'd otherwise have to write by hand
 
-![Damn youz spring!](./pics/tangled.jpg | width=100)
+<img src="./pics/tangled.jpg" width="250">
