@@ -895,9 +895,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#cache;0.13.8!cache.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 1897ms :: artifacts dl 51ms
+[debug] :: resolution report :: resolve 4439ms :: artifacts dl 25ms
 [debug] 	report for default#springtastrophe$sbt_2.11;1.0 default produced in /Users/hamishdickson/Programming/springtastrophe/target/resolution-cache/reports/default-springtastrophe$sbt_2.11-default.xml
-[debug] 	resolve done (1897ms resolve - 51ms download)
+[debug] 	resolve done (4439ms resolve - 25ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#springtastrophe$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1311,6 +1311,6 @@
 [debug] 	[NOT REQUIRED] org.ensime#ensime-sbt;0.1.5-SNAPSHOT!ensime-sbt.jar(src)
 [debug] 	[NOT REQUIRED] org.scalariform#scalariform_2.10;0.1.4!scalariform_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.3.0-rc1!ivy.jar(src)
-[debug] :: resolution report :: resolve 88ms :: artifacts dl 16ms
+[debug] :: resolution report :: resolve 137ms :: artifacts dl 32ms
 [debug] 	report for default#springtastrophe$sources_2.11;1.0 default produced in /Users/hamishdickson/Programming/springtastrophe/target/resolution-cache/reports/default-springtastrophe$sources_2.11-default.xml
-[debug] 	resolve done (88ms resolve - 16ms download)
+[debug] 	resolve done (137ms resolve - 32ms download)

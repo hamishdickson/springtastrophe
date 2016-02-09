@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="default"
 		confs="default"
-		date="20160207192134"/>
+		date="20160207200004"/>
 	<dependencies>
 		<module organisation="org.apache.ivy" name="ivy">
 			<revision name="2.3.0-rc1" status="release" pubdate="20120501065937" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/ivy/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">

@@ -4,7 +4,7 @@
 		module="springtastrophe$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160207192134"
+		publication="20160207200004"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
