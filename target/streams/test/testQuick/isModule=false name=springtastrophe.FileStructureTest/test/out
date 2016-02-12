@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mFileStructureTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mA file reader[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not find anything if the dir has no java annotations[0m[0m
+[0m[[0minfo[0m] [0m[32m- should find a class in a package containing a java file[0m[0m
