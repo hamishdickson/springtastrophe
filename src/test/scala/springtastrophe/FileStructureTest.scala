@@ -29,5 +29,17 @@ class FileStructureTest extends FlatSpec with Matchers {
     d.contents.foldRight(true)((i,j) => FileStructure.isJavaFile(i) && j) should be (true)
   }
 
-  it should "be able to scan folders and create a list of all java files" in (pending)
+  it should "be able to scan folders and create a list of all java files" in {
+    val d = Directory("./src/test/java/nonEmptyPackage")
+
+    val f1 = new File("./src/test/java/nonEmptyPackage/NoAnnotationThere.java")
+    val f2 = new File("./src/test/java/nonEmptyPackage/SomeAnnotationThere.java")
+
+    val fs = d.javaFiles
+
+    fs.size should be (2)
+
+    fs should contain (f1)
+    fs should contain (f2)
+  }
 }

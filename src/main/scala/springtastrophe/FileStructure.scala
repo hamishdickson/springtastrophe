@@ -15,9 +15,13 @@ sealed trait FileStructure {
 }
 case object Empty extends FileStructure
 case class Directory(d: String) extends FileStructure {
-  def contents: List[File] = whatsInADir(new File(d))
+  lazy val contents: List[File] = whatsInADir(new File(d))
 
-  def isEmpty: Boolean = whatsInADir(new File(d)).isEmpty
+  lazy val isEmpty: Boolean = whatsInADir(new File(d)).isEmpty
+
+  lazy val javaFiles: List[File] =
+    contents.foldRight(List[File]())((a,b) => if (FileStructure.isJavaFile(a)) a :: b else b)
+
 }
 
 object FileStructure {
