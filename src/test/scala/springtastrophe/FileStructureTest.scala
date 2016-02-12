@@ -18,9 +18,9 @@ class FileStructureTest extends FlatSpec with Matchers {
     val f2 = new File("./src/test/java/nonEmptyPackage/SomeAnnotationThere.java")
     val f3 = new File("./src/test/java/nonEmptyPackage/notARealFilejava.txt")
 
-    val ls = List(f1, f3, f2)
-
-    d.contents should be (ls)
+    d.contents should contain (f1)
+    d.contents should contain (f2)
+    d.contents should contain (f3)
   }
 
   it should "know what a java file is" in {
