@@ -21,6 +21,6 @@ class FileStructureTest extends FlatSpec with Matchers {
 
     d.contents should be (ls)
 
-    ls.foldRight(true)((i,j) => FileStructure.fileType(i) == "Java" && j) should be (true)
+    ls.foldRight(true)((i,j) => FileStructure.isJavaFile(i) && j) should be (true)
   }
 }
