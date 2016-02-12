@@ -2,7 +2,7 @@ package springtastrophe
 
 import java.io.File
 
-sealed trait FileStructure[+A] {
+sealed trait FileStructure {
   /**
     * A recursive search over a directory and it's sub directories to find files
     *
@@ -14,10 +14,14 @@ sealed trait FileStructure[+A] {
     fs ++ fs.filter(_.isDirectory).flatMap(whatsInADir)
   }
 }
-case object Empty extends FileStructure[Nothing]
-case class ActualFile[A](f: A) extends FileStructure[A]
-case class Directory[A](d: String) extends FileStructure[A] {
+case object Empty extends FileStructure
+case class ActualFile(f: File) extends FileStructure
+case class Directory(d: String) extends FileStructure {
   def contents: List[File] = whatsInADir(new File(d))
 
   def isEmpty: Boolean = whatsInADir(new File(d)).isEmpty
+}
+
+object FileStructure {
+  def fileType(f: File): String = "Java"
 }

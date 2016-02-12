@@ -1,5 +1,7 @@
 package springtastrophe
 
+import java.io.File
+
 import org.scalatest.{Matchers, FlatSpec}
 
 class FileStructureTest extends FlatSpec with Matchers {
@@ -9,11 +11,16 @@ class FileStructureTest extends FlatSpec with Matchers {
     d.isEmpty should be (false)
   }
 
-  ignore should "know it's a java file" in {
+  it should "know it's a java file" in {
     val d = Directory("./src/test/java/nonEmptyPackage")
 
-    val ls = List("./src/test/java/nonEmptyPackage/NoAnnotationThere.java", "./src/test/java/nonEmptyPackage/SomeAnnotationThere.java")
+    val f1 = new File("./src/test/java/nonEmptyPackage/NoAnnotationThere.java")
+    val f2 = new File("./src/test/java/nonEmptyPackage/SomeAnnotationThere.java")
+
+    val ls = List(f1, f2)
 
     d.contents should be (ls)
+
+    ls.foldRight(true)((i,j) => FileStructure.fileType(i) == "Java" && j) should be (true)
   }
 }
