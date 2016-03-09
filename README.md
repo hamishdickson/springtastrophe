@@ -12,7 +12,6 @@ This is a little project for scanning your springtastrophe and building that swa
 
 This project should be considered highly experimental and not production ready
 
-
 ## Implementation
 
 This project is very much in the early stages and certainly does not yet do what it says here. Things which aren't complete yet are:
