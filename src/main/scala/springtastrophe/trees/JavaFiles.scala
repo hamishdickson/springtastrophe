@@ -1,9 +1,15 @@
 package springtastrophe.trees
 
-case class JavaClass[A](c: A) {
-  val annotationValues: List[String] = ???
+import java.lang.annotation.Annotation
 
-  val methods: List[JavaMethod] = ???
+case class JavaClass[A](c: Class[A]) {
+  val annotations: List[String] = {
+    val as: List[Annotation] = c.getAnnotations.toList
+
+    as map { case _ => "AARGH" }
+  }
+
+  //val methods: List[JavaMethod] = ???
 }
 
 case class JavaMethod[A, M](m: M) {
