@@ -8,6 +8,11 @@ We've all been there: your new REST project's going really well, you do everythi
 
 This is a little project for scanning your springtastrophe and building that swagger content file thingy you'd otherwise have to write by hand
 
+## Project Status
+
+This project should be considered highly experimental and not production ready
+
+
 ## Implementation
 
 This project is very much in the early stages and certainly does not yet do what it says here. Things which aren't complete yet are:
