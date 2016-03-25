@@ -11,11 +11,3 @@ This is a little project for scanning your springtastrophe and building that swa
 ## Project Status
 
 This project should be considered highly experimental and not production ready
-
-## Implementation
-
-This project is very much in the early stages and certainly does not yet do what it says here. Things which aren't complete yet are:
-
-1. The general plan here is to be able to add this as a maven dependency for a spring rest project. The code will then run at the project's compile time
-
-2. This project will do a filter & fold over the java files looking for `@Controller` annotations and building a list 

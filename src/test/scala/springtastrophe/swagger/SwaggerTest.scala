@@ -2,7 +2,6 @@ package springtastrophe.swagger
 
 import org.scalatest.{FlatSpec, Matchers}
 
-
 import io.circe._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._
 
 class SwaggerTest extends FlatSpec with Matchers {
